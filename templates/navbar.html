@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="{{ url_for('static',filename='/css/components.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css') }}">
+<nav>
+    <div class="title">
+        <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24"><rect width="24" height="24" rx="3" fill="#2d3139" /><path d="M7 5h2v2h2v2H9v2H7V9H5V7h2zm8 3h4v1.5h-4zm-8.5 6.5l2 2 2-2 1 1-2 2 2 2-1 1-2-2-2 2-1-1 2-2-2-2zm8.5.5h4v1.5h-4zm0 2.5h4V20h-4z" fill="#fff" /></svg>
+        <h2>AWS Cost Calculator</h2>
+    </div>
+
+    <div class="links">
+        <a href="{{url_for('home') }}" class="navbuttons">
+            Home
+        </a>
+        <a href="{{url_for('dashboard') }}" class="navbuttons">
+            Dashboard
+        </a>
+        <a href="#" class="navbuttons">
+            Estimates
+        </a>
+        <a href="https://docs.aws.amazon.com/" class="navbuttons">
+            Documentation
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <form action="#" method="POST" class="search-form">
+            <input type="text" name="query" class="search-input" placeholder=" 🔍︎ Search services..." required>
+        </form>
+
+        <a href="#">
+            Sign In
+        </a>
+        <a href="/dashboard" class="getstarted" id="getstarted">
+            <span>Get Started</span>
+        </a>
+    </div>
+</nav>

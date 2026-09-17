@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+    <title>CloudCost</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+
+            <div class="hero" id="left-side">
+
+                <div class="badge">
+                    ⚡ Fast & Accurate Estimations
+                </div>
+                <h1 class="heading">
+                    Estimate AWS Service<br>
+                    Cost<br>
+                    in <span>Seconds</span>
+                </h1>
+
+                <p class="hero-text">
+                    Design your architecture, configure usage metrics, and generate precise cost
+                    forecasts. Built for developers and technical leads who need reliable pricing
+                    models without the complexity.
+                </p>
+
+                <div class="buttons">
+                    <a href="{{url_for('dashboard')}}" class="button" id="first-button">
+                        Go to Dashboard →
+                    </a>
+
+                    <a href="#" class="button" id="second-button">
+                        Watch Demo
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="hero" id="right-side">
+                <img src="{{ url_for('static', filename='/img/hero_img.png') }}">
+            </div>
+
+        </section>
+
+
+        <!-- Mid Section -->
+        <section class="mid-section">
+            <h3>How It Works</h3>
+            <span>
+                Generate accurate cloud estimates in three simple steps.
+            </span>
+
+            <div class="cards">
+                <div class="card">
+                    <h5>1. Choose Services</h5>
+                    <p>
+                        Select from a comprehensive list of supported
+                        AWS infrastructure and platform services.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h5>2. View Pricing</h5>
+                    <p>
+                        Configure parameters like instance types,
+                        storage volume, and expected traffic to see live
+                        pricing updates.
+                    </p>
+                </div>
+                <div class="card">
+                    <h5>3. Understand Costs</h5>
+                    <p>
+                        Analyze total monthly estimates, export to CSV,
+                        or share configuration links with your team.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Footer -->
+    </footer>
+</body>
+
+</html>
